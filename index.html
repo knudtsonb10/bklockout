@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -12,17 +12,78 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "Locksmith",
   "name": "BK Lockout & Key",
-  "description": "Mobile locksmith serving Mesa, Gilbert and Chandler AZ. Flat rate pricing. No hidden fees.",
+  "description": "Emergency mobile locksmith serving Mesa, Gilbert, Chandler and the East Valley AZ. Flat rate — auto, residential and RV lockouts $195. Jump starts $85. No hidden fees. Thu–Mon 8pm–Midnight.",
   "telephone": "+14809993617",
   "url": "https://bklockout.com",
-  "address": {"@type": "PostalAddress", "addressLocality": "Mesa", "addressRegion": "AZ", "addressCountry": "US"},
-  "areaServed": ["Mesa AZ", "Gilbert AZ", "Chandler AZ"],
+  "image": "https://bklockout.com/logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Mesa",
+    "addressRegion": "AZ",
+    "postalCode": "85201",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 33.4152,
+    "longitude": -111.8315
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Mesa"},
+    {"@type": "City", "name": "Gilbert"},
+    {"@type": "City", "name": "Chandler"},
+    {"@type": "AdministrativeArea", "name": "East Valley, Arizona"}
+  ],
   "openingHoursSpecification": [
     {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Thursday","Friday","Saturday","Sunday","Monday"], "opens": "20:00", "closes": "23:59"}
   ],
-  "priceRange": "$$"
+  "priceRange": "$$",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Locksmith Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Auto Lockout Service Mesa AZ", "description": "Emergency car lockout service for most makes and models. Non-destructive entry. $195 flat."}, "price": "195", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Residential Lockout Service Mesa AZ", "description": "Home lockout service. Fast entry without damage to your door or lock. $195 flat."}, "price": "195", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "RV Lockout Service", "description": "RV and motorhome lockout. Entry door, cab, and storage compartments. $195 flat."}, "price": "195", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Jump Start Service", "description": "Dead battery jump start. Professional equipment, fast response. $85 flat."}, "price": "85", "priceCurrency": "USD"}
+    ]
+  }
+}
+</script>
+ 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a locksmith cost in Mesa AZ?",
+      "acceptedAnswer": {"@type": "Answer", "text": "BK Lockout & Key charges a flat $195 for all lockouts — auto, residential, and RV. Jump starts are $85 flat. No trip fee in Mesa, Gilbert, or Chandler. Price is quoted on the phone before we arrive."}
+    },
+    {
+      "@type": "Question",
+      "name": "How fast can a locksmith get to me in Mesa or Gilbert AZ?",
+      "acceptedAnswer": {"@type": "Answer", "text": "BK Lockout & Key typically arrives within 20–40 minutes in Mesa, Gilbert, and Chandler. We confirm your ETA when you call."}
+    },
+    {
+      "@type": "Question",
+      "name": "Is there an emergency locksmith available after hours in Chandler AZ?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes. BK Lockout & Key operates Thursday through Monday, 8pm to Midnight — covering after-hours emergencies in Chandler, Mesa, and Gilbert AZ. Call (480) 999-3617."}
+    },
+    {
+      "@type": "Question",
+      "name": "Will a locksmith damage my car when unlocking it?",
+      "acceptedAnswer": {"@type": "Answer", "text": "No. BK Lockout & Key uses professional non-destructive entry techniques and tools. Your vehicle, door, and lock are left damage-free."}
+    },
+    {
+      "@type": "Question",
+      "name": "Do you charge a trip fee or dispatch fee?",
+      "acceptedAnswer": {"@type": "Answer", "text": "No trip fee in Mesa, Gilbert, or Chandler. A $50 travel fee applies outside those cities. Always disclosed before we dispatch."}
+    }
+  ]
 }
 </script>
  
@@ -247,9 +308,9 @@ footer{background:#0d0d0d;border-top:1px solid var(--border);padding:32px 0 20px
     <div class="hero-grid">
       <div>
         <span class="hero-tag">Mobile Locksmith · Mesa, Gilbert, Chandler AZ</span>
-        <h1>Locked <em>Out?</em></h1>
-        <div class="hero-sub">We'll get you back in.</div>
-        <p class="hero-desc">BK Lockout &amp; Key is a flat-rate mobile locksmith serving the East Valley. One price quoted on the phone — that's what you pay. No trip fees. No hidden charges.</p>
+        <h1>Emergency Locksmith <em>Mesa, AZ</em></h1>
+        <div class="hero-sub">Locked Out? We'll Get You Back In.</div>
+        <p class="hero-desc">BK Lockout &amp; Key is a flat-rate emergency mobile locksmith serving Mesa, Gilbert, and Chandler AZ. Locked out of your car, home, or RV? One price quoted on the phone — that's what you pay. No trip fees. No hidden charges. Available Thu–Mon, 8pm–Midnight.</p>
         <div class="hero-btns">
           <a href="tel:+14809993617" class="btn-main">📞 Call (480) 999-3617</a>
           <a href="#services" class="btn-ghost">View Services ↓</a>
@@ -261,7 +322,7 @@ footer{background:#0d0d0d;border-top:1px solid var(--border);padding:32px 0 20px
           <li>20–40 Min Response</li>
         </ul>
       </div>
-      <img src="logo.png" alt="BK Lockout and Key" class="hero-logo">
+      <img src="logo.png" alt="BK Lockout and Key — Mobile Locksmith Mesa Gilbert Chandler AZ" class="hero-logo">
     </div>
   </div>
 </section>
@@ -282,26 +343,26 @@ footer{background:#0d0d0d;border-top:1px solid var(--border);padding:32px 0 20px
     <div class="svc-grid">
       <div class="svc">
         <span class="svc-icon">🚗</span>
-        <h3>Auto Lockout</h3>
-        <p>Most makes and models. Non-destructive entry — your car stays damage-free.</p>
+        <h3>Auto Lockout — Mesa, Gilbert &amp; Chandler</h3>
+        <p>Locked out of your car in the East Valley? We serve most makes and models including Toyota, Honda, Ford, Chevy, Kia, and more. Non-destructive entry — your car stays damage-free.</p>
         <div class="price">$195 <small>flat</small></div>
       </div>
       <div class="svc">
         <span class="svc-icon">🏠</span>
-        <h3>Residential Lockout</h3>
-        <p>Locked out of your home? Fast entry without damage to your door or lock.</p>
+        <h3>Residential Lockout — Home Locksmith AZ</h3>
+        <p>Locked out of your house or apartment in Mesa, Gilbert, or Chandler? Fast, professional entry without damage to your door, frame, or lock.</p>
         <div class="price">$195 <small>flat</small></div>
       </div>
       <div class="svc">
         <span class="svc-icon">🚐</span>
-        <h3>RV Lockout</h3>
-        <p>Most classes of motorhomes and travel trailers — entry door, cab, and storage.</p>
+        <h3>RV Lockout — Motorhome &amp; Travel Trailer</h3>
+        <p>Locked out of your RV, motorhome, or travel trailer in the East Valley? We handle entry doors, cab doors, and storage compartments on most classes.</p>
         <div class="price">$195 <small>flat</small></div>
       </div>
       <div class="svc">
         <span class="svc-icon">🔋</span>
-        <h3>Jump Start</h3>
-        <p>Dead battery? We come to you with professional equipment and get you rolling.</p>
+        <h3>Jump Start Service — Dead Battery Mesa AZ</h3>
+        <p>Dead battery in Mesa, Gilbert, or Chandler? We come to your location with professional jump start equipment and get you back on the road fast.</p>
         <div class="price">$85 <small>flat</small></div>
       </div>
     </div>
@@ -365,6 +426,36 @@ footer{background:#0d0d0d;border-top:1px solid var(--border);padding:32px 0 20px
           <span class="stat-val">$0</span>
           <span class="stat-lbl">trip fee in Mesa,<br>Gilbert &amp; Chandler</span>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<section id="faq" style="padding:60px 0;border-top:1px solid var(--border)">
+  <div class="container">
+    <span class="sec-tag">Common Questions</span>
+    <h2 class="sec-h">FAQ — Locksmith Mesa, Gilbert &amp; Chandler AZ</h2>
+    <p class="sec-p">Straight answers about how we work and what we charge.</p>
+    <div style="display:grid;gap:2px">
+      <div style="background:var(--dark);padding:22px 24px;border-left:3px solid var(--teal)">
+        <h3 style="font-family:'Oswald',sans-serif;font-size:16px;font-weight:600;color:var(--white);margin-bottom:6px">How much does a locksmith cost in Mesa AZ?</h3>
+        <p style="font-size:13px;color:var(--muted);line-height:1.7">$195 flat for all lockouts — car, home, or RV. $85 flat for jump starts. No trip fee in Mesa, Gilbert, or Chandler. Price is quoted on the phone before we leave. What we quote is what you pay.</p>
+      </div>
+      <div style="background:var(--dark);padding:22px 24px;border-left:3px solid var(--teal)">
+        <h3 style="font-family:'Oswald',sans-serif;font-size:16px;font-weight:600;color:var(--white);margin-bottom:6px">How fast can an emergency locksmith get to me?</h3>
+        <p style="font-size:13px;color:var(--muted);line-height:1.7">Most calls in Mesa, Gilbert, and Chandler arrive in 20–40 minutes. We confirm your ETA on the phone when you call so you're never left guessing.</p>
+      </div>
+      <div style="background:var(--dark);padding:22px 24px;border-left:3px solid var(--teal)">
+        <h3 style="font-family:'Oswald',sans-serif;font-size:16px;font-weight:600;color:var(--white);margin-bottom:6px">Is there an after-hours locksmith in Chandler or Gilbert AZ?</h3>
+        <p style="font-size:13px;color:var(--muted);line-height:1.7">Yes. BK Lockout &amp; Key runs Thursday through Monday, 8pm to Midnight — the hours most locksmiths are unavailable. Outside those hours, call and we'll check availability.</p>
+      </div>
+      <div style="background:var(--dark);padding:22px 24px;border-left:3px solid var(--teal)">
+        <h3 style="font-family:'Oswald',sans-serif;font-size:16px;font-weight:600;color:var(--white);margin-bottom:6px">Will unlocking my car cause any damage?</h3>
+        <p style="font-size:13px;color:var(--muted);line-height:1.7">No. We use professional non-destructive entry tools and technique. Your vehicle, door panel, and lock are left exactly as we found them.</p>
+      </div>
+      <div style="background:var(--dark);padding:22px 24px;border-left:3px solid var(--teal)">
+        <h3 style="font-family:'Oswald',sans-serif;font-size:16px;font-weight:600;color:var(--white);margin-bottom:6px">Do you charge a trip fee or dispatch fee?</h3>
+        <p style="font-size:13px;color:var(--muted);line-height:1.7">No trip fee within Mesa, Gilbert, and Chandler. A $50 travel fee applies outside those cities — always disclosed before we dispatch, never a surprise on arrival.</p>
       </div>
     </div>
   </div>
@@ -444,3 +535,5 @@ footer{background:#0d0d0d;border-top:1px solid var(--border);padding:32px 0 20px
 </body>
 </html>
  
+
+
